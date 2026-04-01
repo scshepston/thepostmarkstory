@@ -49,6 +49,18 @@ nav{background:#2C1810;padding:16px 40px;display:flex;align-items:center;justify
 .letter-body{font-size:15px;color:#2C1810;line-height:2;font-style:italic;}
 .letter-sig{margin-top:28px;font-size:14px;color:#2C1810;}
 .insert-note{text-align:center;margin-top:20px;font-size:12px;color:#5C3A28;font-style:italic;}
+.inserts-section{background:#2C1810;}
+.inserts-section .section-label{color:#C4A882;}
+.inserts-section .section-title{color:#F5EDD8;}
+.inserts-section .section-body{color:#E8DCC8;}
+.inserts-section .divider{background:#8B2020;}
+.inserts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-top:40px;}
+.insert-card{border:1px solid #5C3A28;border-radius:4px;padding:28px 24px;text-align:center;}
+.insert-icon{font-size:28px;margin-bottom:14px;}
+.insert-title{font-size:15px;color:#F5EDD8;margin-bottom:8px;font-style:italic;}
+.insert-desc{font-size:13px;color:#C4A882;line-height:1.7;}
+.inserts-note{margin-top:40px;padding:24px 32px;border:1px solid #5C3A28;border-left:3px solid #8B2020;border-radius:0 4px 4px 0;}
+.inserts-note p{font-size:15px;color:#E8DCC8;line-height:1.8;font-style:italic;}
 .box-section{background:#2C1810;}
 .box-section .section-label{color:#C4A882;}
 .box-section .section-title{color:#F5EDD8;}
@@ -95,7 +107,7 @@ footer{background:#1A0F0A;padding:40px;text-align:center;}
 .footer-links{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-bottom:20px;}
 .footer-links a{color:#C4A882;font-size:12px;letter-spacing:1px;text-decoration:none;}
 .footer-copy{font-size:11px;color:#8B6A50;}
-@media(max-width:700px){.steps,.pricing-grid,.team-grid,.box-features{grid-template-columns:1fr;}.nav-links{display:none;}}
+@media(max-width:700px){.steps,.pricing-grid,.team-grid,.box-features,.inserts-grid{grid-template-columns:1fr;}.nav-links{display:none;}}
 </style>
 </head>
 <body>
@@ -198,14 +210,58 @@ footer{background:#1A0F0A;padding:40px;text-align:center;}
     <div class="section-label">What arrives</div>
     <div class="section-title">A letter unlike anything in your inbox</div>
     <div class="divider"></div>
-    <p class="section-body">Each letter is printed on premium cream stationery in a handwritten-style font, hand-folded, hand-inserted, and mailed in a small correspondence envelope — addressed to you by name. Inside, a keepsake that belongs to the world of the story.</p>
+    <p class="section-body">Each letter is printed on premium cream stationery in a handwritten-style font, hand-folded, hand-inserted, and mailed in a small correspondence envelope — addressed to you by name. And tucked inside every single letter, a keepsake that belongs to the world of the story.</p>
     <div class="letter-mockup">
       <div class="letter-header">Letter No. 7 · The Wanderer's Letters</div>
       <div class="letter-date">Received: the second Friday of the month</div>
       <div class="letter-body">"I found the valley at last — the one the old shepherd described before we parted ways at the crossroads outside Mirrenfall. I wish you could have seen it as I did, just before the light left the sky. The grass was the color of things I don't have words for yet. I pressed something for you. You'll find it folded in with this letter..."</div>
       <div class="letter-sig">— Yours from somewhere far,<br>E.</div>
     </div>
-    <div class="insert-note">✦ &nbsp; A pressed wildflower included with this letter &nbsp; ✦</div>
+    <div class="insert-note">✦ &nbsp; A pressed wildflower enclosed with this letter &nbsp; ✦</div>
+  </div>
+</div>
+
+<div class="inserts-section section">
+  <div class="section-inner">
+    <div class="section-label">Something tangible</div>
+    <div class="section-title">Every letter carries a gift</div>
+    <div class="divider"></div>
+    <p class="section-body">Each letter arrives with a physical insert — a small, story-specific keepsake tucked inside alongside the pages. These aren't filler. They're part of the story, chosen to make the world feel real in your hands.</p>
+    <div class="inserts-grid">
+      <div class="insert-card">
+        <div class="insert-icon">🌿</div>
+        <div class="insert-title">Pressed botanicals</div>
+        <div class="insert-desc">A dried flower or leaf — sent from the field, the forest, or a world that only exists in the story.</div>
+      </div>
+      <div class="insert-card">
+        <div class="insert-icon">🎨</div>
+        <div class="insert-title">Original artwork</div>
+        <div class="insert-desc">Illustrations of characters, places, and moments from the arc — designed by Shay specifically for each story.</div>
+      </div>
+      <div class="insert-card">
+        <div class="insert-icon">📌</div>
+        <div class="insert-title">Illustrated bookmarks</div>
+        <div class="insert-desc">A character portrait or story scene to mark your place — and remember who you're reading about.</div>
+      </div>
+      <div class="insert-card">
+        <div class="insert-icon">✉️</div>
+        <div class="insert-title">Postcards</div>
+        <div class="insert-desc">Handcrafted postcards from the story world — landscapes, maps, or messages that expand the narrative.</div>
+      </div>
+      <div class="insert-card">
+        <div class="insert-icon">⭐</div>
+        <div class="insert-title">Stickers & seals</div>
+        <div class="insert-desc">Collectible stickers and wax seal designs tied to the characters and events of each arc.</div>
+      </div>
+      <div class="insert-card">
+        <div class="insert-icon">🎁</div>
+        <div class="insert-title">Seasonal surprises</div>
+        <div class="insert-desc">Occasional special inserts tied to the story's timeline — something unexpected tucked in when the moment calls for it.</div>
+      </div>
+    </div>
+    <div class="inserts-note">
+      <p>"Every insert is designed or curated to feel like it arrived from inside the story — not like something printed off and stuffed in an envelope. The pressed flower didn't come from a warehouse. It came from somewhere in the world of the letter."</p>
+    </div>
   </div>
 </div>
 
@@ -226,7 +282,7 @@ footer{background:#1A0F0A;padding:40px;text-align:center;}
       </div>
       <div class="box-feat">
         <div class="box-feat-title">Holds all 26 letters</div>
-        <div class="box-feat-body">Every letter and envelope fits neatly inside in sequential order — the whole story, preserved.</div>
+        <div class="box-feat-body">Every letter, envelope, and insert fits neatly inside in sequential order — the whole story, preserved.</div>
       </div>
       <div class="box-feat">
         <div class="box-feat-title">A perfect gift</div>
